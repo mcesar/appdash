@@ -23,4 +23,4 @@ COPY --from=stage1 /app/app /
 
 COPY --from=stage1 /tmp /tmp
 
-CMD [ "/app", "serve", "--url=/" ]
+CMD [ "/app", "serve" ]

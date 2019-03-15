@@ -29,12 +29,12 @@
 }
 </style>
 
-<img class="red-logo img-responsive center-block" src="/static/logo_red.png"></img>
+<img class="red-logo img-responsive center-block" src="{{.BaseURL}}static/logo_red.png"></img>
 <h3 style="text-align: center;">Application tracing system for Go.</h3>
-<img class="red-spinner img-responsive center-block" src="/static/red_spinner.png"></img>
+<img class="red-spinner img-responsive center-block" src="{{.BaseURL}}static/red_spinner.png"></img>
 
 <div id="big-btn">
-  <a href="/traces" class="btn btn-block btn-lg btn-danger">
+  <a href="{{.BaseURL}}traces" class="btn btn-block btn-lg btn-danger">
     <i class="fa fa-area-chart big-btn"></i> View Traces
   </a>
 </div>
