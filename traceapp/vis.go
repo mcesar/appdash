@@ -6,12 +6,12 @@ import (
 	"net/url"
 	"time"
 
-	"sourcegraph.com/sourcegraph/appdash"
+	"github.com/mcesar/appdash"
 
 	// Unmarshaling of events depends on the fact that they are registered with
 	// Appdash.
-	_ "sourcegraph.com/sourcegraph/appdash/httptrace"
-	_ "sourcegraph.com/sourcegraph/appdash/sqltrace"
+	_ "github.com/mcesar/appdash/httptrace"
+	_ "github.com/mcesar/appdash/sqltrace"
 )
 
 // errTimelineItemValidation is returned by timelineItem.Valid when either

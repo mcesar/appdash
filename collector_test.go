@@ -13,7 +13,7 @@ import (
 
 	"sort"
 
-	"sourcegraph.com/sourcegraph/appdash/internal/wire"
+	"github.com/mcesar/appdash/internal/wire"
 )
 
 func TestCollectorServer(t *testing.T) {

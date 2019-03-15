@@ -105,8 +105,8 @@ func UnmarshalEvent(as Annotations, e Event) error {
 // packages that register Appdash events with this package:
 //
 //  import(
-//      _ "sourcegraph.com/sourcegraph/appdash/httptrace"
-//      _ "sourcegraph.com/sourcegraph/appdash/sqltrace"
+//      _ "github.com/mcesar/appdash/httptrace"
+//      _ "github.com/mcesar/appdash/sqltrace"
 //  )
 //
 func RegisterEvent(e Event) {

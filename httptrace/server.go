@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"sourcegraph.com/sourcegraph/appdash"
+	"github.com/mcesar/appdash"
 )
 
 func init() { appdash.RegisterEvent(ServerEvent{}) }

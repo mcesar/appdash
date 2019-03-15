@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"sourcegraph.com/sourcegraph/appdash"
+	"github.com/mcesar/appdash"
 )
 
 var _ appdash.Event = ServerEvent{}

@@ -17,7 +17,6 @@ import (
 	"encoding/base64"
 	"encoding/json"
 	"errors"
-	"fmt"
 	htmpl "html/template"
 	"io/ioutil"
 	"log"
@@ -30,7 +29,7 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"sourcegraph.com/sourcegraph/appdash"
+	"github.com/mcesar/appdash"
 	static "sourcegraph.com/sourcegraph/appdash-data"
 )
 
@@ -65,9 +64,11 @@ func New(r *Router, base *url.URL) (*App, error) {
 	// Validate the base URL and use the root path if none was specified.
 	cpy := *base
 	base = &cpy
-	if base.Scheme == "" || base.Host == "" {
-		return nil, fmt.Errorf("appdash: base URL must contain both scheme and host, found %q", base.String())
-	}
+	/*
+		if base.Scheme == "" || base.Host == "" {
+			return nil, fmt.Errorf("appdash: base URL must contain both scheme and host, found %q", base.String())
+		}
+	*/
 	if base.Path == "" {
 		base.Path = "/"
 	}
